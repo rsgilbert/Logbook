@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: fixed;
+    background: greenyellow;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__brand {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header__ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__li--a {
+    text-decoration: none;
+    color: #446310;
+    padding: 2rem;
+}
+
+
+main {
+    padding-top: 3rem;
+    background: paleturquoise;
+}
+form {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: [logwork-start calendar-start] 100% [logwork-end calendar-end];
+    grid-template-columns: [calendar-start] 40% [calendar-end logwork-start] 60% [logwork-end];
+}
+
+.form__logwork {
+    padding: 1rem;
+    background: powderblue;
+    grid-area: logwork;
+}
+.form__calendar {
+    padding: 1rem;
+    background: purple;
+    grid-area: calendar;
+}
+
+form label {
+    margin: 1rem 10%;
+    color: darkred;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-self: flex-start;
+}
+
+form textarea {
+    flex-basis: 30vh;
+    width: 90%;
+    padding: 1rem;
+}
+
+#logwork__form-submit {
+    background: deeppink;
+    border: 4px solid #de3c7f;
+    height: 3rem;
+    width: 60%;
+    margin: 2rem;
+    color: white;
+    flex-basis: auto;
+    font-weight: bolder;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+
+
+footer {
+    position: relative;
+    background: black;
+    height: 6rem;
+    display: flex;
+    padding: 1rem;
+    color: white;
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.footer__ul {
+    list-style: none;
+}
+.footer__ul--li {
+    padding: 0.25rem;
+}
+
+.footer__ul--li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
